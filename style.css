@@ -47,7 +47,7 @@ header button {
 }
 
 .imagem {
-    background-image: url('https://github.com/flaviofiqueli/CDRPrazeres/blob/main/logoCDRPrazeres.png'); /* A imagem que você quer usar */
+    background-image: url('/logoCDRPrazeres.png'); /* A imagem que você quer usar */
     background-size: cover;
     background-position: center;
     height: 100%; /* A imagem vai escalar com o header */
