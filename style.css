@@ -61,6 +61,7 @@ header #title {
     margin: 0;
 }
 
+/* Estilos para o rodapé */
 footer {
     background-color: #112641;  /* Cor de fundo */
     color: white;               /* Cor do texto */
@@ -118,6 +119,7 @@ footer {
         width: 80px;  /* Reduz o tamanho dos patrocinadores em telas menores */
     }
 }
+
 
 /* Barra Lateral (menu abaixo do cabeçalho) */
 #sidebar {
