@@ -1,59 +1,121 @@
+/* Reset de margens e preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-header nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 20px;
-}
-
-section h2 {
     color: #333;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
 }
 
-button:hover {
-    background-color: #0056b3;
+header .logo img {
+    width: 150px; /* Tamanho do logo */
 }
 
-footer {
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Banner */
+.banner {
+    background-color: #0066cc;
+    color: white;
+    padding: 40px;
     text-align: center;
-    background-color: #333;
-    color: #fff;
+}
+
+.banner h1 {
+    font-size: 3em;
+}
+
+.banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.banner .btn {
+    background-color: #ffcc00;
+    color: #003366;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner .btn:hover {
+    background-color: #e6b800;
+}
+
+/* Conteúdo Principal */
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box h2 {
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+.box p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.box .btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box .btn:hover {
+    background-color: #002244;
+}
+
+/* Rodapé */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
     padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }

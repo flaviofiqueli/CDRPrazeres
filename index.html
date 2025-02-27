@@ -1,38 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Simples</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Site Exemplo - Estilo Porto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Cabeçalho -->
     <header>
-        <h1>Bem-vindo ao Meu Site Simples</h1>
+        <div class="logo">
+            <img src="logo.png" alt="Logo do Clube">
+        </div>
         <nav>
             <ul>
-                <li><a href="https://www.netflix.com" target="_blank">Netflix</a></li>
-                <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Equipa</a></li>
+                <li><a href="#">Loja</a></li>
+                <li><a href="#">Contactos</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h2>Sobre</h2>
-        <p>Este é um exemplo de um site simples, onde você pode aprender como criar um site básico e interagir com links externos como Netflix e GitHub.</p>
+    <!-- Banner -->
+    <section class="banner">
+        <h1>Bem-vindo ao Site</h1>
+        <p>Fique por dentro das últimas novidades e mais!</p>
+        <a href="#" class="btn">Saiba mais</a>
     </section>
 
-    <section>
-        <h2>Interatividade</h2>
-        <button id="changeTextBtn">Clique para mudar o texto!</button>
-        <p id="textToChange">Este é o texto inicial.</p>
-    </section>
+    <!-- Conteúdo Principal -->
+    <main>
+        <section class="box-container">
+            <div class="box">
+                <h2>Notícia 1</h2>
+                <p>Descubra as últimas novidades do clube!</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            <div class="box">
+                <h2>Notícia 2</h2>
+                <p>Últimos resultados e destaques importantes.</p>
+                <a href="#" class="btn">Leia mais</a>
+            </div>
+            <div class="box">
+                <h2>Loja Oficial</h2>
+                <p>Visite nossa loja para artigos exclusivos.</p>
+                <a href="#" class="btn">Ver produtos</a>
+            </div>
+        </section>
+    </main>
 
+    <!-- Rodapé -->
     <footer>
-        <p>&copy; 2025 Meu Site Simples</p>
+        <p>&copy; 2025 Nome do Clube. Todos os direitos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
+
