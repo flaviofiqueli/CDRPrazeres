@@ -12,54 +12,79 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #003366;
+    background-color: #112641; /* Cor base dos hexágonos */
+    background-image: 
+        linear-gradient(to right, 
+            #185C7F 0%,    /* Azul no lado esquerdo */
+            #112641 40%,
+            #112641 60%,
+            #7D1554 100%   /* Roxo no lado direito */
+        ), /* Gradiente geral */
+        url('https://www.transparenttextures.com/patterns/hexellence.png'); /* Padrão de hexágonos */
+    background-blend-mode: overlay; /* Mistura o gradiente com os hexágonos */
     color: white;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    position: relative;
 }
 
-header h1 {
-    font-size: 1.8em;
-}
+
 
 header button {
-    background-color: #003366;
+    background: transparent;
     color: white;
     border: none;
     font-size: 1.5em;
     cursor: pointer;
+    margin-right: 15px;
+}
+
+.imagem {
+    background-image: url('https://github.com/flaviofiqueli/CDRPrazeres/blob/main/logoCDRPrazeres.png'); /* A imagem que você quer usar */
+    background-size: cover;
+    background-position: center;
+    height: 100%; /* A imagem vai escalar com o header */
+    flex-grow: 1;
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
 }
 
 header button:hover {
     background-color: #002244;
 }
 
-/* Barra Lateral */
+header #title {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+/* Barra Lateral (menu abaixo do cabeçalho) */
 #sidebar {
     position: fixed;
-    top: 0;
-    left: -250px; /* Inicialmente escondida */
-    height: 100%;
-    width: 250px;
+    top: 60px; /* Distância abaixo do cabeçalho */
+    left: 0;
+    width: 100%;
     background-color: #003366;
     transition: 0.3s;
-    padding-top: 20px;
     z-index: 1000;
+    padding: 10px 0;
+    display: none; /* Inicialmente invisível */
 }
 
 #sidebar ul {
     list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 #sidebar ul li {
-    padding: 15px;
-    text-align: center;
+    padding: 10px;
 }
 
 #sidebar ul li a {
@@ -74,23 +99,13 @@ header button:hover {
 }
 
 /* Conteúdo Principal */
-main {
-    margin-left: 0;
+#content {
     padding: 20px;
+    background-color: #fff;
     flex-grow: 1;
 }
 
-h2 {
-    color: #003366;
-}
-
-/* Quando a barra lateral estiver visível */
+/* Quando o menu está visível */
 #sidebar.active {
-    left: 0;
+    display: block; /* Torna o menu visível */
 }
-
-/* Quando o conteúdo principal estiver deslocado */
-main.active {
-    margin-left: 250px;
-}
-

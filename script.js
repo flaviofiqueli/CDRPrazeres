@@ -1,7 +1,6 @@
 function toggleMenu() {
     const sidebar = document.getElementById('sidebar');
-    const main = document.querySelector('main');
     
+    // Alterna a visibilidade da barra lateral
     sidebar.classList.toggle('active');
-    main.classList.toggle('active');
 }
