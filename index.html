@@ -1,35 +1,95 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CDR Prazeres</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header>
-        <h1>CDR Prazeres</h1>
-        <button id="menu-btn" onclick="toggleMenu()">☰</button>
-    </header>
+/* Reset de margens e preenchimento */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Barra Lateral -->
-    <nav id="sidebar">
-        <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Notícias</a></li>
-            <li><a href="#">Equipa</a></li>
-            <li><a href="#">Loja</a></li>
-            <li><a href="#">Contactos</a></li>
-        </ul>
-    </nav>
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
 
-    <!-- Conteúdo Principal -->
-    <main>
-        <h2>Bem-vindo ao CDR Prazeres!</h2>
-        <p>Conteúdo da página...</p>
-    </main>
+/* Cabeçalho */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+header h1 {
+    font-size: 1.8em;
+}
+
+header button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #002244;
+}
+
+/* Barra Lateral */
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Inicialmente escondida */
+    height: 100%;
+    width: 250px;
+    background-color: #003366;
+    transition: 0.3s;
+    padding-top: 20px;
+    z-index: 1000;
+}
+
+#sidebar ul {
+    list-style-type: none;
+}
+
+#sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #005599;
+}
+
+/* Conteúdo Principal */
+main {
+    margin-left: 0;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h2 {
+    color: #003366;
+}
+
+/* Quando a barra lateral estiver visível */
+#sidebar.active {
+    left: 0;
+}
+
+/* Quando o conteúdo principal estiver deslocado */
+main.active {
+    margin-left: 250px;
+}
