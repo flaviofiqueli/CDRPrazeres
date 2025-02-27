@@ -61,6 +61,64 @@ header #title {
     margin: 0;
 }
 
+footer {
+    background-color: #112641;  /* Cor de fundo */
+    color: white;               /* Cor do texto */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;    /* Centraliza os itens */
+    align-items: center;
+    flex-direction: column;
+    position: fixed;            /* Fixa o rodapé na parte inferior */
+    bottom: 0;                  /* Posiciona o rodapé na parte inferior */
+    width: 100%;
+    z-index: 100;               /* Garante que o rodapé fique acima de outros elementos */
+}
+
+/* Estilo para o conteúdo do rodapé */
+.rodape-conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para os links das redes sociais */
+.social-links a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;  /* Tamanho dos ícones */
+    height: 40px;
+    object-fit: contain;
+}
+
+/* Barra de separação entre redes sociais e patrocinadores */
+.barra-separacao {
+    margin: 0 15px;
+    font-size: 24px;  /* Tamanho da barra */
+    color: white;
+}
+
+/* Estilo para as imagens dos patrocinadores */
+.patrocinadores img {
+    width: 100px;  /* Ajuste o tamanho dos patrocinadores */
+    height: auto;
+    margin: 0 10px;
+    object-fit: contain;
+}
+
+/* Responsividade - Para telas pequenas */
+@media (max-width: 768px) {
+    .social-links a {
+        margin: 0 5px;
+    }
+    .patrocinadores img {
+        width: 80px;  /* Reduz o tamanho dos patrocinadores em telas menores */
+    }
+}
+
 /* Barra Lateral (menu abaixo do cabeçalho) */
 #sidebar {
     position: fixed;
