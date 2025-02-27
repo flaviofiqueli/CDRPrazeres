@@ -3,58 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Exemplo - Estilo Porto</title>
+    <title>CDR Prazeres</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="logo">
-            <img src="logo.png" alt="Logo do Clube">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Equipa</a></li>
-                <li><a href="#">Loja</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
-        </nav>
+        <h1>CDR Prazeres</h1>
+        <button id="menu-btn" onclick="toggleMenu()">☰</button>
     </header>
 
-    <!-- Banner -->
-    <section class="banner">
-        <h1>Bem-vindo ao Site</h1>
-        <p>Fique por dentro das últimas novidades e mais!</p>
-        <a href="#" class="btn">Saiba mais</a>
-    </section>
+    <!-- Barra Lateral -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Notícias</a></li>
+            <li><a href="#">Equipa</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
 
     <!-- Conteúdo Principal -->
     <main>
-        <section class="box-container">
-            <div class="box">
-                <h2>Notícia 1</h2>
-                <p>Descubra as últimas novidades do clube!</p>
-                <a href="#" class="btn">Leia mais</a>
-            </div>
-            <div class="box">
-                <h2>Notícia 2</h2>
-                <p>Últimos resultados e destaques importantes.</p>
-                <a href="#" class="btn">Leia mais</a>
-            </div>
-            <div class="box">
-                <h2>Loja Oficial</h2>
-                <p>Visite nossa loja para artigos exclusivos.</p>
-                <a href="#" class="btn">Ver produtos</a>
-            </div>
-        </section>
+        <h2>Bem-vindo ao CDR Prazeres!</h2>
+        <p>Conteúdo da página...</p>
     </main>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2025 Nome do Clube. Todos os direitos reservados.</p>
-    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
