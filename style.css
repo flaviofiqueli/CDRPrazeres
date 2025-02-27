@@ -46,13 +46,10 @@ header button {
     margin-right: 15px;
 }
 
-.imagem {
-    background-image: url('/logoCDRPrazeres.png'); /* A imagem que você quer usar */
-    background-size: cover;
-    background-position: center;
-    height: 100%; /* A imagem vai escalar com o header */
-    flex-grow: 1;
-    margin-right: 20px; /* Espaço entre a imagem e o texto */
+.simbolo-clube {
+    width: 50px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    object-fit: contain; /* Faz com que a imagem mantenha suas proporções */
 }
 
 header button:hover {
