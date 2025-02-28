@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários - C.D.R. Prazeres</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <button id="menu-btn" onclick="toggleMenu()">☰</button>
+        <img src="https://raw.githubusercontent.com/flaviofiqueli/CDRPrazeres/main/assets/imagens/simboloCDRPrazeres.png" alt="Símbolo do Clube" class="simbolo-clube">
+        <h1 id="title">CDR Prazeres</h1>
+    </header>
+
+    <!-- Barra Lateral (menu abaixo do cabeçalho) -->
+    <nav id="sidebar">
+        <ul>
+            <li><a href="horarios.html">Hórarios</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Equipa</a></li>
+            <li><a href="#">Loja</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <div id="content">
+        <main>
+            <div class="container">
+                <h2>Horários</h2>
+                <p>Veja abaixo os horários das atividades do C.D.R. Prazeres:</p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Atividade</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>Patinagem</td>
+                            <td>18:00</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>Futsal</td>
+                            <td>20:00</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>Futebol</td>
+                            <td>19:00</td>
+                        </tr>
+                        <!-- Adicione outros horários aqui -->
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="rodape-conteudo">
+            <div class="social-links">
+                <a href="https://www.instagram.com/cdrprazeres/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/cdrprazeres.cdrprazeres" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                </a>
+            </div>
+
+            <span class="barra-separacao">|</span>
+
+            <div class="patrocinadores">
+                <img src="assets/imagens/patrocinador1.png" alt="Patrocinador 1">
+                <img src="assets/imagens/patrocinador2.png" alt="Patrocinador 2">
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
